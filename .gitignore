@@ -19,6 +19,10 @@ dist-ssr
 .git_corrupt_backup
 .tmp_figma
 
+# 개발 전용 문서 (배포/공유 제외)
+CLAUDE.md
+docs/images
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
