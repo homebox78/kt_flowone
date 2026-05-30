@@ -1,0 +1,57 @@
+@import './assets/fonts.css';
+@import './styles/tokens.css';
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: var(--ds-font-family);
+  font-size: var(--ds-fs-body-13);
+  line-height: var(--ds-lh-body);
+  color: var(--ds-text-gray-900);
+  background: var(--ds-fill-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* #app 이 실제 세로 스크롤러(height:100% + overflow-x:hidden → overflow-y:auto).
+   스크롤바 공간을 항상 예약해, 스크롤바 유무에 따라 페이지 전환 시
+   가로폭이 갑자기 좁아지는(레이아웃 점프) 현상을 방지한다. */
+#app {
+  scrollbar-gutter: stable;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Toolbar / form 내 세로 구분선 — 어디서든 사용 */
+.ds-toolbar-divider {
+  display: inline-block; width: 1px; height: 16px;
+  background: var(--ds-fill-gray-300);
+  margin: 0 var(--ds-space-4);
+  flex-shrink: 0;
+}
+
+/* AG Grid 폰트 강제 통일 — quartz 테마는 Inter를 기본으로 가져서 override 필요 */
+.ag-theme-quartz,
+.ag-theme-alpine,
+.ag-root-wrapper {
+  --ag-font-family: var(--ds-font-family);
+  font-family: var(--ds-font-family) !important;
+}
+.ag-theme-quartz .ag-header-cell-text,
+.ag-theme-quartz .ag-cell,
+.ag-theme-quartz .ag-cell-value,
+.ag-theme-quartz input,
+.ag-theme-quartz select,
+.ag-theme-quartz button {
+  font-family: var(--ds-font-family) !important;
+}
+
+/* Vuetify 컴포넌트도 Roboto 기본값을 가져서 override 필요 */
+.v-application,
+.v-application * {
+  font-family: var(--ds-font-family) !important;
+}

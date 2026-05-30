@@ -1,0 +1,7 @@
+<svg viewBox="0 0 16.25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<path id="Vector" d="M4 13.75V7.25C4 6.2835 3.2165 5.5 2.25 5.5C1.2835 5.5 0.5 6.2835 0.5 7.25V13.75C0.5 14.7165 1.2835 15.5 2.25 15.5C3.2165 15.5 4 14.7165 4 13.75Z" fill="var(--fill-0, white)" stroke="var(--stroke-0, #727A90)" stroke-linejoin="round"/>
+<path id="Vector_2" d="M9.925 13.75V10.25C9.925 9.2835 9.1415 8.5 8.175 8.5C7.2085 8.5 6.425 9.2835 6.425 10.25V13.75C6.425 14.7165 7.2085 15.5 8.175 15.5C9.1415 15.5 9.925 14.7165 9.925 13.75Z" fill="#DBE0E9" stroke="var(--stroke-0, #727A90)" stroke-linejoin="round"/>
+<path id="Vector_3" d="M15.75 13.75V2.25C15.75 1.2835 14.9665 0.5 14 0.5C13.0335 0.5 12.25 1.2835 12.25 2.25V13.75C12.25 14.7165 13.0335 15.5 14 15.5C14.9665 15.5 15.75 14.7165 15.75 13.75Z" fill="var(--fill-0, white)" stroke="var(--stroke-0, #727A90)" stroke-linejoin="round"/>
+</g>
+</svg>

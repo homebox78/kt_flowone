@@ -1,0 +1,16 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ktbg" gradientUnits="userSpaceOnUse" x1="-46" y1="-12" x2="302" y2="268">
+      <stop offset="0%" stop-color="#F05BB2"/>
+      <stop offset="35%" stop-color="#B769F6"/>
+      <stop offset="75%" stop-color="#6C71FF"/>
+      <stop offset="100%" stop-color="#6CB1FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="40" fill="url(#ktbg)"/>
+  <g fill="#FFFFFF">
+    <rect x="56"  y="68"  width="40"  height="120" rx="6"/>
+    <rect x="56"  y="68"  width="152" height="40"  rx="6"/>
+    <rect x="56"  y="118" width="124" height="36"  rx="6"/>
+  </g>
+</svg>

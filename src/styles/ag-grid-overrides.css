@@ -1,0 +1,74 @@
+/* 시안 4:1990 — AG Grid v33+ JS Theming API 대응
+   v35는 ag-theme-buttonStyle-N 같은 동적 클래스를 생성하므로
+   클래스명 의존하지 않고 .ds-grid 내부 ag-* 요소 직접 타겟.
+   JS Theming API 가 인라인 주입한 --ag-* 변수도 강제로 덮어씀. */
+
+.ds-grid,
+.ds-grid [class*="ag-theme-"] {
+  --ag-column-border: solid 1px #e8ebf1 !important;
+  --ag-row-border: solid 1px #e8ebf1 !important;
+  --ag-header-column-border: solid 1px #e8ebf1 !important;
+  --ag-header-row-border: solid 1px #e8ebf1 !important;
+  --ag-wrapper-border: none !important;
+  --ag-wrapper-border-radius: 0 !important;
+  --ag-header-column-border-height: 100% !important;
+}
+
+.ds-grid {
+  --ag-border-color: #e8ebf1;
+  --ag-row-border-color: #e8ebf1;
+  --ag-header-column-separator-color: #e8ebf1;
+  --ag-cell-horizontal-border: solid #e8ebf1;
+  --ag-wrapper-border: none;
+}
+
+.ds-grid .ag-root-wrapper,
+.ds-grid .ag-root {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+}
+
+.ds-grid .ag-header,
+.ds-grid .ag-header-viewport,
+.ds-grid .ag-header-container {
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.ds-grid .ag-header-cell,
+.ds-grid .ag-cell {
+  border-right: 1px solid #e8ebf1 !important;
+}
+
+.ds-grid .ag-header-row > .ag-header-cell:last-child,
+.ds-grid .ag-row > .ag-cell:last-child {
+  border-right: 0 !important;
+}
+
+.ds-grid .ag-row {
+  border-bottom: 1px solid #e8ebf1 !important;
+}
+
+/* 컬럼 정렬 유틸 (memory: feedback-table-alignment)
+   - cell-left/center/right: 데이터 셀 정렬
+   - header-left/center/right: 헤더 라벨 정렬 */
+.ds-grid .ag-cell.cell-left,
+.ds-grid .ag-cell.cell-center,
+.ds-grid .ag-cell.cell-right {
+  display: flex !important;
+  align-items: center !important;
+}
+.ds-grid .ag-cell.cell-left   { justify-content: flex-start !important; text-align: left   !important; }
+.ds-grid .ag-cell.cell-center { justify-content: center     !important; text-align: center !important; }
+.ds-grid .ag-cell.cell-right  { justify-content: flex-end   !important; text-align: right  !important; }
+
+/* AG Grid 헤더 정렬: 정렬 아이콘은 유지하며 라벨 텍스트만 정렬
+   label-container 의 justify-content 와 label 내부 정렬 모두 강제 */
+.ds-grid .ag-header-cell.header-left   .ag-cell-label-container { justify-content: flex-end   !important; }
+.ds-grid .ag-header-cell.header-center .ag-cell-label-container { justify-content: center     !important; }
+.ds-grid .ag-header-cell.header-right  .ag-cell-label-container { justify-content: flex-start !important; }
+
+.ds-grid .ag-header-cell.header-left   .ag-header-cell-label { justify-content: flex-start !important; flex: 0 1 auto !important; }
+.ds-grid .ag-header-cell.header-center .ag-header-cell-label { justify-content: center     !important; flex: 0 1 auto !important; }
+.ds-grid .ag-header-cell.header-right  .ag-header-cell-label { justify-content: flex-end   !important; flex: 0 1 auto !important; }
