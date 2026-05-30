@@ -1,7 +1,14 @@
 node_modules
 dist
 .git
+.git_corrupt_backup
 .vscode
 .env.development
 .env.local
 *.log
+.playwright-mcp
+.tmp_figma
+
+# 개발 전용 문서/이미지 (배포 불필요)
+CLAUDE.md
+docs/images
