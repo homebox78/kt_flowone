@@ -25,9 +25,7 @@
 | `.editorconfig` | 에디터 공통 인덴트/EOL 설정. |
 | `.env.development` / `.env.production` | 환경 변수. |
 | `deploy/` | 배포 산출물 (`Dockerfile`, `nginx.conf`, `.dockerignore`). 빌드 컨텍스트는 프로젝트 루트, Dockerfile만 `-f deploy/Dockerfile`로 지정. |
-| `scripts/` | 유틸리티 스크립트 (`download-icons.py` — Figma 아이콘 일괄 다운로드). |
 | `public/fonts/spoqa/` | Spoqa Han Sans Neo 5 weight 로컬 호스팅 (woff2 + woff). |
-| `docs/images/` | Figma 시안 PNG 30+종 + README 매핑표. 작업 시 1:1 비교 기준. |
 
 ## `src/`
 

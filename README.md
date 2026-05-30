@@ -87,7 +87,7 @@ npm run build    # 프로덕션 빌드 → dist/
 │   ├── main.js
 │   └── style.css
 ├── deploy/                            # 배포 산출물 (Dockerfile, nginx.conf, .dockerignore)
-├── docs/                              # 프로젝트 문서 (STRUCTURE / DEVELOPMENT / DEPLOYMENT + images/)
+├── docs/                              # 프로젝트 문서 (STRUCTURE / DEVELOPMENT / DEPLOYMENT)
 ├── .env.development / .env.production
 └── package.json
 ```

@@ -6,7 +6,7 @@
 
 1. CSS 값은 `var(--ds-*)` 토큰만 사용 ([src/styles/tokens.css](../src/styles/tokens.css))
 2. 입력/버튼/모달/뱃지는 `<DsButton>`, `<DsTextField>`, `<DsSelect>` 등 Ds 컴포넌트만 사용 ([src/components/ds/](../src/components/ds/))
-3. 작업 전 `/style-guide` 페이지에서 컴포넌트 확인 + [docs/images/](../docs/images/) 시안 PNG와 1:1 비교
+3. 작업 전 `/style-guide` 페이지에서 컴포넌트 확인
 4. 시안 변경 시 → `tokens.css` 또는 해당 Ds 컴포넌트 수정 → 전 화면 자동 반영
 
 ## 1. 코드 컨벤션
